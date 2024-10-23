@@ -53,7 +53,7 @@ const server = http.createServer((request, response)=> {
 
 //Ctrl + c
 
-server.listen(port, error => {
+server.listen(port, '0.0.0.0', error => {
     if(error){
         console.log(error);
     } else {
