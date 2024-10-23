@@ -1,7 +1,7 @@
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
-const port = process.env.PORT || 3000; 
+const port = 3000; 
 
 
 const server = http.createServer((request, response)=> {
@@ -53,7 +53,7 @@ const server = http.createServer((request, response)=> {
 
 //Ctrl + c
 
-server.listen(port, '0.0.0.0', error => {
+server.listen(port, error => {
     if(error){
         console.log(error);
     } else {
